@@ -10,10 +10,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+/* <------Nav bar------> */
+
 nav {
     width: 100%;
     height: 10vh;
-    /* background-color: red; */
+    background-color: red;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -45,4 +48,68 @@ nav ul :nth-child(2) {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     margin-right: 20px;
+}
+
+/* <------main-section------> */
+
+
+
+/* <------footer-section------> */
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0px;
+    background-color: #f2f2f2;
+    
+}
+footer .country{
+    height: 45px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    font-size: 15px;
+}
+footer .country p{
+    opacity: 80%;
+}
+footer .utilities{
+    width: 100%;
+    min-height: 50px;
+    border: 0.5px solid rgba(0, 0, 0, 0.100);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* gap: 100px; */
+    justify-content: space-evenly;
+    flex-direction: row;
+    font-size: 14px;
+    opacity: 80%;
+
+}
+footer .utilities .sec
+{
+    min-height: 30px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+
+}
+.sec ul{
+    display: flex;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 15px 0px;
+
+}
+.sec1 ul {
+flex-wrap: wrap;
+justify-content: center;
+}
+footer li {
+    cursor: pointer;
 }
