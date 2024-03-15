@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    height: 100vh;
+    width: 100vw;    
+}
 
 body {
     height: 100vh;
@@ -86,7 +90,9 @@ main .search-box {
 
 .search-box .input-container {
     height: 50px;
-    width: 36.0rem;
+    /* min-width: fit-content; */
+    width: 90%;
+    max-width: 36.0rem;
     /* background-color: yellow; */
     display: flex;
     align-items: center;
@@ -96,12 +102,12 @@ main .search-box {
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
     padding: 10px;
-    /* padding-right: 0%; */
+    padding-right: 5%;
     border:  1px solid rgba(0, 0, 0, 0.150);
     border-top:  2px solid rgba(0, 0, 0, 0.150);
     border-bottom:  2px solid rgba(0, 0, 0, 0.150);
 
-    margin: 0px 20px;
+    margin: 0px 1%;
 }
 .input-container:focus-within {
     box-shadow: 0.5px 1px 3px 0px rgba(0, 0, 0, 0.2);
