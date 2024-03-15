@@ -75,19 +75,19 @@ main .search-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    /* background-color: red; */
     flex-wrap: nowrap;
 
 }
 
 .search-box .search {
-    height: 50px;
+    min-height: 50px;
 }
 
 .search-box .input-container {
-    height: 55px;
-    min-width: 600px;
-    background-color: yellow;
+    height: 50px;
+    width: 36.0rem;
+    /* background-color: yellow; */
     display: flex;
     align-items: center;
     border-radius: 30px;
@@ -96,6 +96,21 @@ main .search-box {
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
     padding: 10px;
+    /* padding-right: 0%; */
+    border:  1px solid rgba(0, 0, 0, 0.150);
+    border-top:  2px solid rgba(0, 0, 0, 0.150);
+    border-bottom:  2px solid rgba(0, 0, 0, 0.150);
+
+    margin: 0px 20px;
+}
+.input-container:focus-within {
+    box-shadow: 0.5px 1px 3px 0px rgba(0, 0, 0, 0.2);
+    border-top:  1px solid rgba(0, 0, 0, 0.150);
+}
+.input-container:hover{
+    box-shadow: 0.5px 1px 3px 0px rgba(0, 0, 0, 0.2);
+    border-top:  1px solid rgba(0, 0, 0, 0.150);
+
 }
 
 .input-container .magnify {
@@ -109,40 +124,73 @@ main .search-box {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    opacity: 50%;
 }
 
 .magnify img {
-    height: 22px;
+    height: 20px;
 
 }
 
 .input-container .input {
-    width: 450px;
+    /* min-width: 28.125rem;  */
+    min-width: 82%; 
+
     &:focus{
         outline: none;
+
     }
+    overflow-x:hidden;
+    overflow-y: auto;
+    word-wrap: break-word;
+    resize: none;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding-left: 12px;
 
 }
 
+
+
 .input-container .voice {
-    width: 50px;
-    background-color: green;
+    /* background-color: green; */
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 2% 3%;
+    padding-right: 1%;
 }
 .input-container .voice img{
 
+    height: 1.6rem;
 }
 
 .input-container .lens {
-    width: 50px;
-    background-color: cyan;
+    /* background-color: cyan; */
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    padding: 2%;
+    padding-left: 1%;
+
+
 }
 .input-container .lens img {    
+    height: 1.6rem;
+
 }
 
 
