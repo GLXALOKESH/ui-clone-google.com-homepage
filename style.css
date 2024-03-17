@@ -135,7 +135,6 @@ main .search-box {
 
 .magnify img {
     height: 20px;
-
 }
 
 .input-container .input {
@@ -177,6 +176,8 @@ main .search-box {
 .input-container .voice img{
 
     height: 1.6rem;
+    cursor: pointer;
+
 }
 
 .input-container .lens {
@@ -196,6 +197,7 @@ main .search-box {
 }
 .input-container .lens img {    
     height: 1.6rem;
+    cursor: pointer;
 
 }
 .main-buttons{
@@ -221,6 +223,7 @@ main .search-box {
     color: rgba(0, 0, 0, 0.700);
     border: none;
     box-sizing: border-box;
+    cursor: pointer;
 }
 .btn:hover{
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.39);
@@ -229,6 +232,25 @@ main .search-box {
     outline: 1px solid #4285F4 ;
 
 }
+
+.languages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    margin-top: 20px;
+}
+.languages p{
+    font-size: 12px;
+}
+#lang-1{
+    opacity: 70%;
+}
+.languages a{
+    text-decoration: none;
+
+}
+
 
 
 /* <------main-section END------> */
