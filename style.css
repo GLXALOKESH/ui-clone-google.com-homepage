@@ -102,7 +102,7 @@ main .search-box {
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
     padding: 10px;
-    padding-right: 5%;
+    padding-right: 2%;
     border:  1px solid rgba(0, 0, 0, 0.150);
     border-top:  2px solid rgba(0, 0, 0, 0.150);
     border-bottom:  2px solid rgba(0, 0, 0, 0.150);
@@ -198,7 +198,37 @@ main .search-box {
     height: 1.6rem;
 
 }
+.main-buttons{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 21px;
+}
+.btn{
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    padding: 0px 16px;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.700);
+    border: none;
+    box-sizing: border-box;
+}
+.btn:hover{
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.39);
+}
+.btn:focus{
+    outline: 1px solid #4285F4 ;
 
+}
 
 
 /* <------main-section END------> */
